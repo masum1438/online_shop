@@ -16,3 +16,6 @@ function getelementbytext(inputid){
     const prevalueString=prevalueField.innerText;
     prevalueField.innerText=value;
    }
+   
+   
+   

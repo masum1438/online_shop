@@ -165,7 +165,7 @@
                         </div>
                         <div class="bg-[#FFF] p-8 mt-2">
                             
-                            <div>
+                            <div id="addname">
 
                             </div>
                            <hr>
@@ -200,6 +200,48 @@
                 </div>
             
            </div></section>
+        <section>
+        
+            <div id="card8"  class="hidden bg-secondary w-1/2 mx-auto card mb-12 border bg-base-100  items-center text-center">
+                <div>
+                    <h2 class="font-medium text-xl my-4">Chose Payment media:</h2>
+                    <div class="grid grid-cols-2 gap-2">
+                      <div  id="bkash-img" class="border" ><img src="images/bKash.png" alt="" /> </div>
+                      <div  id="nagad-img" class="border"><img src="images/nagad.png" alt="" /></div>  
+                                                                
+                        
+                    </div>
+                    <div>
+                        <h4>Click on the image</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                   <div id="bkash" class="hidden grid">
+                    
+                    <div class="border bg-accent">Total: <span id="total2">00</span>tk</div>
+                   <div><input class="border p-3 " type="text" placeholder="enter bKash account num..."></div>
+                   <div><input class="border p-3 " type="text" placeholder="enter bKash pin..."></div>
+                    
+                  
+                   </div>
+                   <div id="nagad" class="hidden grid">
+                    <div class="border bg-accent"><h4>Total: <span id="total3">00</span>tk</h4></div>
+                   
+                   <input class="border p-3 " type="text" placeholder="enter nagad account num...">
+                   <input class="border p-3" type="text" placeholder="enter nagad pin...">
+                  
+                </div>
+                     <div id="payment"class="hidden">
+                    <button id="confirm"class="border py-2 rounded-lg px-4 text-center bg-[#E527B2] text-white">Submit</button>
+                    <button id="n-confirm"class="border py-2 rounded-lg px-4 text-center bg-[#E527B2] text-white">Unsubmit</button>
+                   </div>
+                   
+                                                      
+                   
+                </div>
+            
+           </div>
+        </section>
 
     </main>
       <script src="js/utilities.js"></script>
