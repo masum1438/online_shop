@@ -3,13 +3,15 @@ var divv=document.getElementById('card8');
 var divvv=document.getElementById('section');
 var bk=document.getElementById('bkash');
 var ng=document.getElementById('nagad');
+var cp=document.getElementById('coupon');
+var hs=document.getElementById('history');
 var pmnt=document.getElementById('payment');
-var v6=0,v1=0,v2=0,v3=0,v4=0,v5=0;
+var v6=0,v1=0,v2=0,v3=0,v4=0,v5=0,mm=0;
 function hideb(){
     bk.classList.remove('hidden');
     pmnt.classList.remove('hidden');
     ng.classList.add('hidden');
-      
+    
    }function hiden(){
     pmnt.classList.remove('hidden');
     bk.classList.add('hidden');
@@ -21,11 +23,15 @@ function hideb(){
     divvv.classList.remove('hidden');
     div.classList.add('hidden');
     divv.classList.add('hidden');
+    hs.classList.add('hidden');
+    cp.classList.add('hidden');
    
     
      
    }
    function hide2(){
+    hs.classList.add('hidden');
+    cp.classList.add('hidden');
     div.classList.remove('hidden');
     divvv.classList.add('hidden');
     divv.classList.add('hidden');
@@ -35,8 +41,21 @@ function hideb(){
     var m=0;
     setelement('total2',m);
     setelement('total3',m);
+    v1=0;v2=0;v3=0;v4=0;v5=0;v6=0; 
+    setelement('totalprice2',mm);
+    setelement('total',mm);
+    setelement('discount',mm);
+    setelement('totalprice',mm);
+    setelement('it6',v6);
+    setelement('it5',v5);
+    setelement('it4',v4);
+    setelement('it3',v3);
+    setelement('it2',v2);
+    setelement('it1',v1);
    }
    function hide3(){
+    hs.classList.add('hidden');
+    cp.classList.add('hidden');
     divvv.classList.remove('hidden');
     div.classList.add('hidden');
     divv.classList.add('hidden');
@@ -46,17 +65,34 @@ function hideb(){
     var m=0;
     setelement('total2',m); 
     setelement('total3',m); 
-     
+    v1=0;v2=0;v3=0;v4=0;v5=0;v6=0; 
+    setelement('totalprice2',mm);
+    setelement('total',mm);
+    setelement('discount',mm);
+    setelement('totalprice',mm);
+    setelement('it6',v6);
+    setelement('it5',v5);
+    setelement('it4',v4);
+    setelement('it3',v3);
+    setelement('it2',v2);
+    setelement('it1',v1);
    }
    function show(){
     divv.classList.remove('hidden');
+    cp.classList.remove('hidden');
+    hs.classList.remove('hidden');
     divvv.classList.add('hidden');
     div.classList.add('hidden');
      
    }
+   function show2(){  
+    hs.classList.add('hidden');   
+     
+   }
 document.getElementById('btn-coupon').addEventListener('click',function(){
+    show2();
     var Discount=0.0;
-    const prevtotal=getelementbytext('totalprice');
+    const prevtotal=getelementbytext('totalprice2');
     const total=parseFloat(prevtotal);
     const couponvalue=getelementbyinput('coupon-input');
     const coupon="SELL200";
@@ -83,8 +119,24 @@ document.getElementById('card1').addEventListener('click',function(){
     const newtotal=total;
    v1++;
     setelement('it1',v1);
-    setelement('totalprice',total);
+    setelement('totalprice',total);   
+    setelement('totalprice2',total);   
+    setelement('total',newtotal);
+    setelement('total2',newtotal);
+    setelement('total3',newtotal); 
+})
+document.getElementById('car1').addEventListener('click',function(){
     
+    const prevvalue=getelementbytext('accessories');
+    const prevvalueFloat=parseFloat(prevvalue);
+    const prevtotal=getelementbytext('totalprice');
+    const prevtotalFloat=parseFloat(prevtotal);
+    const total=prevvalueFloat+prevtotalFloat;    
+    const newtotal=total;
+   v1++;
+    setelement('it1',v1);
+    setelement('totalprice',total);
+    setelement('totalprice2',total);
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -107,6 +159,7 @@ document.getElementById('dcard1').addEventListener('click',function(){
     
     setelement('it1',v1);
     setelement('totalprice',total);   
+    setelement('totalprice2',total);   
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -124,7 +177,22 @@ document.getElementById('card2').addEventListener('click',function(){
     const newtotal=total;   
     v2++;
     setelement('it2',v2);
-    setelement('totalprice',total);
+    setelement('totalprice',total);setelement('totalprice2',total); 
+    setelement('total3',newtotal);
+    setelement('total',newtotal);
+    setelement('total2',newtotal);
+})
+document.getElementById('car2').addEventListener('click',function(){
+    
+    const prevvalue=getelementbytext('products');
+    const prevvalueFloat=parseFloat(prevvalue);
+    const prevtotal=getelementbytext('totalprice');
+    const prevtotalFloat=parseFloat(prevtotal);
+    const total=prevvalueFloat+prevtotalFloat;  
+    const newtotal=total;   
+    v2++;
+    setelement('it2',v2);
+    setelement('totalprice',total); setelement('totalprice2',total);
     setelement('total3',newtotal);
     setelement('total',newtotal);
     setelement('total2',newtotal);
@@ -145,8 +213,8 @@ document.getElementById('dcard2').addEventListener('click',function(){
         var newtotal=total; 
     }
     
-    setelement('it1',v2);
-    setelement('totalprice',total);   
+    setelement('it2',v2);
+    setelement('totalprice',total);  setelement('totalprice2',total);  
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -161,8 +229,24 @@ document.getElementById('card3').addEventListener('click',function(){
     const newtotal=total;
     v3++;
     
-    setelement('it2',v3);
-    setelement('totalprice',total);
+    setelement('it3',v3);
+    setelement('totalprice',total);setelement('totalprice2',total); 
+    setelement('total2',newtotal);
+    setelement('total',newtotal);
+    setelement('total3',newtotal);
+})
+document.getElementById('car3').addEventListener('click',function(){
+    
+    const prevvalue=getelementbytext('cooker');
+    const prevvalueFloat=parseFloat(prevvalue);
+    const prevtotal=getelementbytext('totalprice');
+    const prevtotalFloat=parseFloat(prevtotal);
+    const total=prevvalueFloat+prevtotalFloat;  
+    const newtotal=total;
+    v3++;
+    
+    setelement('it3',v3);
+    setelement('totalprice',total); setelement('totalprice2',total);
     setelement('total2',newtotal);
     setelement('total',newtotal);
     setelement('total3',newtotal);
@@ -183,8 +267,8 @@ document.getElementById('dcard3').addEventListener('click',function(){
         var newtotal=total; 
     }
     
-    setelement('it1',v3);
-    setelement('totalprice',total);   
+    setelement('it3',v3);
+    setelement('totalprice',total); setelement('totalprice2',total);   
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -200,7 +284,22 @@ document.getElementById('card4').addEventListener('click',function(){
     const newtotal=total;
     v4++;
     setelement('it4',v4);
-    setelement('totalprice',total);
+    setelement('totalprice',total);setelement('totalprice2',total); 
+    setelement('total2',newtotal);
+    setelement('total',newtotal);
+    setelement('total3',newtotal);
+})
+document.getElementById('car4').addEventListener('click',function(){
+    
+    const prevvalue=getelementbytext('cap');
+    const prevvalueFloat=parseFloat(prevvalue);
+    const prevtotal=getelementbytext('totalprice');
+    const prevtotalFloat=parseFloat(prevtotal);
+    const total=prevvalueFloat+prevtotalFloat;  
+    const newtotal=total;
+    v4++;
+    setelement('it4',v4);
+    setelement('totalprice',total); setelement('totalprice2',total);
     setelement('total2',newtotal);
     setelement('total',newtotal);
     setelement('total3',newtotal);
@@ -221,8 +320,8 @@ document.getElementById('dcard4').addEventListener('click',function(){
         var newtotal=total; 
     }
     
-    setelement('it1',v4);
-    setelement('totalprice',total);   
+    setelement('it4',v4);
+    setelement('totalprice',total); setelement('totalprice2',total);   
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -236,8 +335,23 @@ document.getElementById('card5').addEventListener('click',function(){
     const total=prevvalueFloat+prevtotalFloat;  
     const newtotal=total;
     v5++;
-    setelement('it5',name5);
-    setelement('totalprice',total);
+    setelement('it5',v5);
+    setelement('totalprice',total);setelement('totalprice2',total); 
+    setelement('total2',newtotal);
+    setelement('total',newtotal);
+    setelement('total3',newtotal);
+})
+document.getElementById('car5').addEventListener('click',function(){
+    
+    const prevvalue=getelementbytext('jersy');
+    const prevvalueFloat=parseFloat(prevvalue);
+    const prevtotal=getelementbytext('totalprice');
+    const prevtotalFloat=parseFloat(prevtotal);
+    const total=prevvalueFloat+prevtotalFloat;  
+    const newtotal=total;
+    v5++;
+    setelement('it5',v5);
+    setelement('totalprice',total); setelement('totalprice2',total);
     setelement('total2',newtotal);
     setelement('total',newtotal);
     setelement('total3',newtotal);
@@ -258,8 +372,8 @@ document.getElementById('dcard5').addEventListener('click',function(){
         var newtotal=total; 
     }
     
-    setelement('it1',v5);
-    setelement('totalprice',total);   
+    setelement('it5',v5);
+    setelement('totalprice',total); setelement('totalprice2',total);   
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -273,7 +387,21 @@ document.getElementById('card6').addEventListener('click',function(){
     const newtotal=total;
     v6++;
     setelement('it6',v6);
-    setelement('totalprice',total);
+    setelement('totalprice',total);setelement('totalprice2',total); 
+    setelement('total3',newtotal);
+    setelement('total',newtotal);
+    setelement('total2',newtotal);
+})
+document.getElementById('car6').addEventListener('click',function(){    
+    const prevvalue=getelementbytext('cates');
+    const prevvalueFloat=parseFloat(prevvalue);
+    const prevtotal=getelementbytext('totalprice');
+    const prevtotalFloat=parseFloat(prevtotal);
+    const total=prevvalueFloat+prevtotalFloat;  
+    const newtotal=total;
+    v6++;
+    setelement('it6',v6);
+    setelement('totalprice',total); setelement('totalprice2',total);
     setelement('total3',newtotal);
     setelement('total',newtotal);
     setelement('total2',newtotal);
@@ -294,7 +422,7 @@ document.getElementById('dcard6').addEventListener('click',function(){
     }
     
     setelement('it6',v6);
-    setelement('totalprice',total);   
+    setelement('totalprice',total); setelement('totalprice2',total);   
     setelement('total',newtotal);
     setelement('total2',newtotal);
     setelement('total3',newtotal); 
@@ -306,16 +434,7 @@ document.getElementById('btn-purchase').addEventListener('click',function(){
     const mm=0; 
      
    if(total>0.0){ 
-    v1=0;v2=0;v3=0;v4=0;v5=0;v6=0; 
-    setelement('totalprice',mm);
-    setelement('discount',mm);
-    setelement('total',mm);
-    setelement('it6',v6);
-    setelement('it5',v5);
-    setelement('it4',v4);
-    setelement('it3',v3);
-    setelement('it2',v2);
-    setelement('it1',v1);
+   
     show();   
    }
    })

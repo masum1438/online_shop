@@ -35,7 +35,7 @@
                 <div class="my-12 ">
                     <div class="grid lg:grid-cols-3  mx-10 gap-3 ">
 
-                        <div class="card border bg-base-100  items-center text-center">
+                        <div id="card1"  class="card border bg-base-100  items-center text-center">
                             <figure class="bg-[#b6b3b3] w-full h-3/4"><img src="images/prod1.png" alt="" /></figure>
                             <div class="card-body">
 
@@ -50,13 +50,10 @@
 
                                 <h6 id="name1" class="font-medium text-xl">K. Accessories</h6>
                                 <h6 id="accessories" class="font-normal text-base">399.00 TK</h6>
-                            <div class="grid grid-cols-2 gap-2">
-                                <button id="card1"  class="btn btn-accent">Select</button>
-                                <button id="dcard1" class="btn btn-accent">Unselect</button>
-                            </div>
+                            
                             </div>
                         </div>
-                        <div  class="card border bg-base-100  items-center text-center">
+                        <div  id="card2"  class="card border bg-base-100  items-center text-center">
                             <figure class="bg-[#b6b3b3] w-full h-3/4"><img src="images/prod2.png" alt="" /></figure>
                             <div class="card-body">
 
@@ -71,13 +68,10 @@
 
                                 <h6 id="name2" class="font-medium text-xl">K.Products</h6>
                                 <h6 id="products" class="font-normal text-base">625.00 TK</h6>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <button id="card2"  class="btn btn-accent">Select</button>
-                                    <button id="dcard2" class="btn btn-accent">Unselect</button>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div  class="card border bg-base-100  items-center text-center">
+                        <div id="card3"  class="card border bg-base-100  items-center text-center">
                             <figure class="bg-[#b6b3b3] w-full h-3/4"><img src="images/prod3.png" alt="" /></figure>
                             <div class="card-body">
 
@@ -92,10 +86,7 @@
 
                                 <h6 id="name3" class="font-medium text-xl">Home Cooker</h6>
                                 <h6 id="cooker" class="font-normal text-base">1480.00 TK</h6>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <button id="card3"  class="btn btn-accent">Select</button>
-                                    <button id="dcard3" class="btn btn-accent">Unselect</button>
-                                </div>
+                                
                             </div>
                         </div>
 
@@ -106,7 +97,7 @@
                 <div class="my-12 ">
                     <div class="grid lg:grid-cols-3  mx-10 gap-3 ">
 
-                        <div  class="card mb-12 border bg-base-100  items-center text-center">
+                        <div  id="card4"  class=" card mb-12 border bg-base-100  items-center text-center">
                             <figure class="bg-[#b6b3b3] w-full h-3/4"><img src="images/prod4.png" alt="" /></figure>
                             <div class="card-body">
 
@@ -121,13 +112,10 @@
 
                                 <h6 id="name4" class="font-medium text-xl">Sports Back Cap</h6>
                                 <h6 id="cap" class="font-normal text-base">169.00 TK</h6>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <button id="card4"  class="btn btn-accent">Select</button>
-                                    <button id="dcard4" class="btn btn-accent">Unselect</button>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div  class="card mb-12 border bg-base-100  items-center text-center">
+                        <div  id="card5"  class=" card mb-12 border bg-base-100  items-center text-center">
                             <figure class="bg-[#b6b3b3] w-full h-3/4"><img src="images/prod5.png" alt="" /></figure>
                             <div class="card-body">
 
@@ -142,13 +130,10 @@
 
                                 <h6 id="name5" class="font-medium text-xl">Full Jersy Set</h6>
                                 <h6 id="jersy" class="font-normal text-base">880.00 TK</h6>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <button id="card5"  class="btn btn-accent">Select</button>
-                                    <button id="dcard5" class="btn btn-accent">Unselect</button>
-                                </div>
+                               
                             </div>
                         </div>
-                        <div  class="card mb-12 border bg-base-100  items-center text-center">
+                        <div id="card6"  class=" card mb-12 border bg-base-100  items-center text-center">
                             <figure class="bg-[#b6b3b3] w-full h-3/4"><img src="images/prod6.png" alt="" /></figure>
                             <div class="card-body">
 
@@ -163,10 +148,10 @@
 
                                 <h6 id="name6" class="font-medium text-xl">Sports cates</h6>
                                 <h6 id="cates" class="font-normal text-base">480.00 TK</h6>
-                                <div class="grid grid-cols-2 gap-2">
+                                <!-- <div class="grid grid-cols-2 gap-2">
                                     <button id="card6"  class="btn btn-accent">Select</button>
                                     <button id="dcard6" class="btn btn-accent">Unselect</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -177,26 +162,16 @@
             <div class="col-span-2">
                 <section class="mt-32 rounded-lg">
                     <div class="grid grid-rows-2 gap-4 mt-8 w-3/4 mx-auto">
-                        <div class="bg-[#FFF] p-8">
-                            <h2 class="text-base font-normal m-4">Have coupon?</h2>
-                            <div class="flex h-8">
-                                <input id="coupon-input" type="text" placeholder="Coupon code"
-                                    class="border w-3/4 rounded-lg px-4 py-2">
-                                <button id="btn-coupon"
-                                    class="border w-1/2 rounded-lg px-4 text-center bg-[#E527B2] text-white">Apply</button>
-                            </div>
-
-                        </div>
+                        
                         <div class="bg-[#FFF] p-8 mt-2">
                             
                             <div id="addname">
 
                             </div>
                            <hr>
-                            <div>
+                            <div class="my-3">
                                 <h4>Total price: <span id="totalprice">00</span>tk</h4>
-                                <h4>Discount: <span id="discount">00</span>tk</h4>
-                                <h4>Total: <span id="total">00</span>tk</h4>
+                               
 
                             </div>
                             <button id="btn-purchase"
@@ -205,17 +180,7 @@
 
                     </div>
                 </section>
-                <div class="dropdown mx-12 mt-6">
-                    <label tabindex="0" class="btn m-1 bg-info">Check History</label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>K. Accessories: <span id="it1"></span> </a></li>
-                      <li><a>K.Products: <span id="it2"></span>  </a></li>
-                      <li><a>Home Cooker: <span id="it3"></span>  </a></li>
-                      <li><a>Sports Back Cap: <span id="it4"></span>  </a></li>
-                      <li><a>Full Jersy Set: <span id="it5"></span>  </a></li>
-                      <li><a>Sports cates: <span id="it6"></span>  </a></li>
-                    </ul>
-                  </div>
+                
             </div>
          </div>
     </section>
@@ -236,8 +201,61 @@
             
            </div></section>
         <section>
-        
-            <div id="card8"  class="hidden bg-info w-1/2 mx-auto card mb-12 border bg-base-100  items-center text-center">
+            <div id="history" class="hidden mx-12 mt-6 ">
+                <label tabindex="0" class=" btn m-1 bg-info">Check History</label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-1/2">
+                  <li><a>K. Accessories: <span id="it1"></span> 
+                    
+                    <button id="car1"  class="btn btn-accent w-8 mx-2">+</button>
+                    <button id="dcard1" class="btn btn-accent w-8">-</button></a>
+                </li>
+                  <li><a>K.Products: <span id="it2"></span> <button id="car2"  class="btn btn-accent w-8 mx-2">+</button>
+                    <button id="dcard2" class="btn btn-accent w-8">-</button> </a></li>
+                  <li><a>Home Cooker: <span id="it3"></span> <button id="car3"  class="btn btn-accent w-8 mx-2">+</button>
+                    <button id="dcard3" class="btn btn-accent w-8">-</button> </a></li>
+                  <li><a>Sports Back Cap: <span id="it4"></span> <button id="car4"  class="btn btn-accent w-8 mx-2">+</button>
+                    <button id="dcard4" class="btn btn-accent w-8">-</button> </a></li>
+                  <li><a>Full Jersy Set: <span id="it5"></span><button id="car5"  class="btn btn-accent w-8 mx-2">+</button>
+                    <button id="dcard5" class="btn btn-accent w-8">-</button>  </a></li>
+                  <li><a>Sports cates: <span id="it6"></span> <button id="car6"  class="btn btn-accent w-8 mx-2">+</button>
+                    <button id="dcard6" class="btn btn-accent w-8">-</button> </a></li>
+                </ul>
+              </div>
+            <div id="coupon" class="hidden bg-gray-100 w-1/2 mx-auto p-8 mt-4">
+                <h2 class="text-base font-normal m-4">Have coupon?</h2>
+                <div class="flex h-8">
+                    <input id="coupon-input"  type="text" placeholder="Coupon code"
+                        class="border w-1/2 mx-2 rounded-lg px-4 py-2">
+                    <button id="btn-coupon"
+                        class="border w-1/2 rounded-lg px-4 text-center bg-[#E527B2] text-white">Apply</button>
+                </div>
+                <div class="my-3">
+                    <h4>Total price: <span id="totalprice2">00</span>tk</h4>
+                    <h4>Discount: <span id="discount">00</span>tk</h4>
+                    <h4>Total: <span id="total">00</span>tk</h4>
+
+                </div>
+                <div class="form-control w-full max-w-xs">
+                    <label class="label">
+                      <span class="label-text">Enter your name:</span>                      
+                    </label>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />               
+                  </div>
+                <div class="form-control w-full max-w-xs">
+                    <label class="label">
+                      <span class="label-text">Enter your phone number:</span>                      
+                    </label>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />               
+                  </div>
+                <div class="form-control w-full max-w-xs">
+                    <label class="label">
+                      <span class="label-text">Enter your location:</span>                      
+                    </label>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />               
+                  </div>
+
+            </div>
+            <div id="card8"  class="mt-4 hidden bg-info w-1/2 mx-auto card mb-12 border bg-base-100  items-center text-center">
                 <div>
                     <h2 class="font-medium text-xl my-4">Chose Payment media:</h2>
                     <div class="grid grid-cols-2 gap-2">
