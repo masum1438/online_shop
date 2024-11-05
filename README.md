@@ -11,6 +11,7 @@ Promotional Banner: Highlights a 20% discount for purchases of 2000 TK or more.
 Promo Code: Includes a dedicated promo code section with a unique code ("SELL200") to unlock discounts.
 
 ***Product Categories:***
+
 **Displays multiple product sections:**
 **Kitchenware:** Includes items like K. Accessories, K. Products, and Home Cooker.
 **Sportswear:** Features items like Sports Back Cap, Full Jersey Set, and Sports Cates.
@@ -29,6 +30,7 @@ Upon selection, input fields appear for users to enter their account numbers and
 ***Sections and Pages***
 
 **Home Section:** Overview of sale highlights with a discount banner.
+
 **Product Cards:** Organized in a responsive grid layout by category.
 
 **Checkout Section: Includes:**
@@ -40,9 +42,15 @@ Payment media selection with bKash and Nagad integration.
 **Tools & Technologies**
 
 **HTML5:** Structured the web content for seamless presentation.
+
 **CSS (Tailwind CSS & DaisyUI):** Used Tailwind CSS for efficient, responsive styling and DaisyUI for UI components and theme customization.
+
 **JavaScript:** Enhanced interactivity, implemented pricing logic, discount codes, and responsive design.
+
 **Netlify:** Deployed the project for live access, ensuring smooth performance and easy sharing.
+
 **VS Code:** Primary code editor, used for development and debugging, with extensions for streamlined coding.
+
 **DevTools**: Utilized for testing responsiveness, inspecting elements, and fine-tuning the design across devices.
+
 
