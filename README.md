@@ -29,5 +29,13 @@ Upon selection, input fields appear for users to enter their account numbers and
 Coupon and total price calculation.
 User information input fields (name, phone, and location).
 Payment media selection with bKash and Nagad integration.
-**Technologies Used**
+
+**Tools & Technologies**
+
+**HTML5:** Structured the web content for seamless presentation.
+**CSS (Tailwind CSS & DaisyUI):** Used Tailwind CSS for efficient, responsive styling and DaisyUI for UI components and theme customization.
+**JavaScript:** Enhanced interactivity, implemented pricing logic, discount codes, and responsive design.
+**Netlify:** Deployed the project for live access, ensuring smooth performance and easy sharing.
+**VS Code:** Primary code editor, used for development and debugging, with extensions for streamlined coding.
+**DevTools**: Utilized for testing responsiveness, inspecting elements, and fine-tuning the design across devices.
 
